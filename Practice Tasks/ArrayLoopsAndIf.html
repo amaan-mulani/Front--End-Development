@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+</head>
+<body>
+    <script>
+        const employees =[
+        {id:101, name: "Amaan", post: "Manager", salary: 50000, gender:"Male",age:24, state:"Maharashtra",blood_group:'A'},
+        {id:102, name: "Shreyas", post: "Developer", salary:25000, gender:"Male",age:21, state:"Satara",blood_group:'A+'},
+        {id:103, name: "Sumit", post: "Developer", salary:70000, gender:"Male",age:23, state:"Maharashtra",blood_group:'A-'},
+        {id:104, name: "Swapnil", post: "Marketing", salary:78000, gender:"Male",age:31, state:"MP",blood_group:'B'},
+        {id:105, name: "Prateek", post: "HR", salary:98000, gender:"Male",age:35, state:"Maharashtra",blood_group:'A-'},
+        {id:106, name: "Priyanka", post: "Developer", salary:55000, gender:"Female",age:56, state:"Maharashtra",blood_group:'A-'},
+        {id:107, name: "Priya", post: "Marketing", salary:77000, gender:"Female",age:42, state:"Maharashtra",blood_group:'AB'},
+        {id:108, name: "Kaushik", post: "Developer", salary:99000, gender:"Male",age:38, state:"Gujarat",blood_group:'O+'},
+        {id:109, name: "Rachana", post: "HR", salary:45000, gender:"Female",age:23, state:"Maharashtra",blood_group:'AB'},
+        {id:100, name: "Kshitij", post: "Assistant Manager", salary:66000, gender:"Male",age:49, state:"Maharashtra",blood_group:'B-'},
+    ]
+
+    for(let i=0;i<employees.length;i++)
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    document.write("Female Employees : <br>");
+    document.write("<br>");
+    for(let i=0;i<employees.length;i++)
+    if(employees[i].gender=="Female")
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    
+    document.write("Employees with salary greater than 30000 and less than 70000 are : <br>");
+    document.write("<br>");
+    for(let i=0;i<employees.length;i++)
+    if(employees[i].salary>=30000 && employees[i].salary<=70000)
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    
+    document.write("HRs and Mangers : <br>");
+    document.write("<br>");
+    for(let i=0;i<employees.length;i++)
+    if(employees[i].post=="HR" || employees[i].post=="Manager")
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    
+    document.write("Age 55+ : <br>");
+    document.write("<br>");
+    for(let i=0;i<employees.length;i++)
+    if(employees[i].age>=55)
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    
+    document.write("Blood Group O+ : <br>");
+    document.write("<br>");
+    for(let i=0;i<employees.length;i++)
+    if(employees[i].blood_group=="O+")
+    {
+        document.write(employees[i].id + "  " + employees[i].name + "  " + employees[i].post + "  " + employees[i].salary + "  " + employees[i].gender + "  " + employees[i].age + "  " + employees[i].state + "  " + employees[i].blood_group);
+        document.write("<br>");
+        document.write("<br>");
+    }
+        
+    
+
+
+    </script>
+    
+</body>
+</html>
