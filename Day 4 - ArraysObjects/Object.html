@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating an Object</title>
+</head>
+<body>
+    <script>
+        let emp=[
+            {id:101, name:'John', salary:50000},
+            {id:102, name:"Smith", salary:60000},
+            {id:103, name:"Kathy", salary:70000}
+        ];
+        // <!-- document.write('ID:'+emp[0].id, 'Name:' +emp[0].name, 'Salary:' +emp[0].salary);-->
+
+        for(let i=0;i<emp.length;i++)
+        {
+            document.write('ID:'+emp[i].id, ' Name:' +emp[i].name, ' Salary:' +emp[i].salary + '<br>');
+        }
+    </script>
+    
+</body>
+</html>
