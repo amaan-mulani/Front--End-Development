@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle</title>
+</head>
+<body>
+    <img id=d4 src="/images/scene1.jpg" alt="Scene 1" height="300" width="200">
+    <h5 id="s1 ">Sceney 1</h5>
+    <button class="button" onclick="toggleimg()">Change Image</button>
+    
+    <script>
+        
+        const images=[ {src:"/images/scene2.jpg"},
+                        {src:"/images/scene3.jpg"}];
+        let index=0;
+        function toggleimg(){
+            index=index + 2 % images.length;
+            document.getElementById("d4").src=images[index].src;
+            document.getElementById("s1").innerHTML=images[index].text;
+        }
+    </script>
+</body>
+</html>
