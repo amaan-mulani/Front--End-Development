@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Table</title>
+</head>
+<body>
+  <h2>Employee Details</h2>
+  <table border="1" id="empTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Post</th>
+        <th>Salary</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>State</th>
+        <th>Blood Group</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // Step 1: Create an array of employee objects
+    let employees = [
+      {id:1, name:"Amit", post:"Manager", salary:50000, gender:"Male", age:35, state:"Maharashtra", blood:"A+"},
+      {id:2, name:"Priya", post:"Developer", salary:40000, gender:"Female", age:28, state:"Delhi", blood:"B+"},
+      {id:3, name:"Rahul", post:"Tester", salary:30000, gender:"Male", age:25, state:"Karnataka", blood:"O+"},
+      {id:4, name:"Sneha", post:"HR", salary:35000, gender:"Female", age:30, state:"Gujarat", blood:"AB+"},
+      {id:5, name:"Arjun", post:"Designer", salary:32000, gender:"Male", age:26, state:"Punjab", blood:"B-"},
+      {id:6, name:"Neha", post:"Analyst", salary:37000, gender:"Female", age:29, state:"Kerala", blood:"O-"},
+      {id:7, name:"Rohit", post:"Support", salary:25000, gender:"Male", age:24, state:"UP", blood:"A-"},
+      {id:8, name:"Kavya", post:"Intern", salary:15000, gender:"Female", age:21, state:"Rajasthan", blood:"AB-"},
+      {id:9, name:"Vikas", post:"Admin", salary:28000, gender:"Male", age:27, state:"Haryana", blood:"O+"},
+      {id:10, name:"Pooja", post:"Consultant", salary:45000, gender:"Female", age:32, state:"Tamil Nadu", blood:"B+"}
+    ];
+
+    // Step 2: Get table body
+    let tbody = document.querySelector("#empTable tbody");
+
+    // Step 3: Loop through employees and add rows
+    employees.forEach(emp => {
+      let row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${emp.id}</td>
+        <td>${emp.name}</td>
+        <td>${emp.post}</td>
+        <td>${emp.salary}</td>
+        <td>${emp.gender}</td>
+        <td>${emp.age}</td>
+        <td>${emp.state}</td>
+        <td>${emp.blood}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
