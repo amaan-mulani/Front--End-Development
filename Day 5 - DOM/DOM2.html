@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+    <p id="p1">Para 1</p>
+    <p id="p2">Para 2</p>
+    </div>
+  
+    <script>
+            // Array of courses
+    let courses = ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "REACT", "ANGULAR"];
+
+    // Get parent <ul>
+    let parentul = document.getElementById("d2");
+
+    // Loop through courses
+    for (let c of courses) {
+        let newli = document.createElement("li"); // not "11"
+        newli.innerText = c;
+        parentul.appendChild(newli);
+    }
+    </script>
+</body>
+</html>

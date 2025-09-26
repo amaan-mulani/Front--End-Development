@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+         let courses=["React","Node","JavaScript"];
+        // let subject1=courses[0];
+        // let subject2=courses[1];
+        // let subject3=courses[2];
+        // console.log(subject1,subject2,subject3);
+        //destructuring
+        const [sub1,sub2,sub3]=courses;
+        console.log(sub1,sub2,sub3);
+
+        let emp={
+            id:101, name:"Amaan", post:"CEO", address:"India"
+        }
+        // const empid=emp.id;
+        // const empname=emp.name;
+        // const emppost=emp.post;
+        // const empaddress=emp.address;
+        // console.log(empid,empname,emppost,empaddress);
+        //destructuring
+        const {id,name,post,address}= emp; //object destructuring name should be same as key.
+        console.log(id,name,post,address);
+    </script>
+</body>
+</html>

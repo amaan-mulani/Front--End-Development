@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+    <p id="p1">Para 1</p>
+    <p id="p2">Para 2</p>
+    </div>
+  
+    <script>
+        let pdisp = document.getElementById("d1");
+        let newPara = document.createElement("p"); //Creating new paragraph element through JS
+        newPara.setAttribute("id","p3");     //Setting id to p3
+        newPara.innerText = "Para 3";       //inputting data into p
+        pdisp.appendChild(newPara);      //Appending newPara to body
+    </script>
+</body>
+</html>
