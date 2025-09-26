@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Click to Change colour</h1>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").hover(function(){
+                $(this).css("background-color","Beige")
+        });
+
+            $("#header").hover(function(){
+                $(this).css("color","Brown")
+        });
+
+            $("#header").mouseleave(function(){
+                $(this).css("background-color","white")
+                $(this).css("color","black")
+        });
+                $("#header").click(function(){
+                $(this).css("text-align","center")
+        });
+
+                $("#header").dblclick(function(){
+                $(this).css("text-align","left")
+        });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btnhide">Hide</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btnshow">Show</button>
+
+    <img src="\images\scene1.jpg" alt="" width="300px" height="200px" id="img1">
+
+    <script>
+        $(document).ready(function(){
+            $('#btnhide').click(function(){
+                $('#img1').hide();
+            })
+            
+            $('#btnshow').click(function(){
+                $('#img1').show();
+            })
+        });
+    </script>
+</body>
+</html>

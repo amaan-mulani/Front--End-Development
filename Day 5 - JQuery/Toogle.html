@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- //Hide, show toggle image. -->
+    <button type="button" id="btnhide">Hide</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btnshow">Show</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btntoggle">Toggle</button> <br>
+    <img src="\images\scene2.jpg" alt="" id="img1" width="300px" height="200px" style="transition: 2;">
+    <br>
+
+    <!-- Slide Up, Slide Down, Slide Toggle paragraph -->
+    <button type="button" id="btnup">Slide Up</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btndown">Slide Down</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btntogglep">Toggle</button> <br>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Fuga architecto molestiae suscipit hic ullam non explicabo animi exercitationem laboriosam perferendis?</p>
+    <br>
+
+    <!-- Fade out, Fade in, Fade toggle image -->
+    <button type="button" id="btnfout">Fade Out</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btnfin">Fade In</button> &nbsp;&nbsp;&nbsp;
+    <button type="button" id="btntogglef">Toggle fade</button> <br>    
+    <img src="\images\scene2.jpg" alt="" id="img2" width="300px" height="200px" style="transition: 2;">
+
+    <script>
+        $(document).ready(function(){
+            $('#btnhide').click(function(){
+                $('#img1').hide();
+            })
+            
+            $('#btnshow').click(function(){
+                $('#img1').show();
+            })
+
+            $('#btntoggle').click(function(){
+                $('#img1').toggle(2000);
+            })
+        });
+
+        // Slide Up, Slide Down, Slide Toggle
+         $(document).ready(function(){
+            $('#btnup').click(function(){
+                $('#p1').slideUp();
+            })
+            
+            $('#btndown').click(function(){
+                $('#p1').slideDown();
+            })
+
+            $('#btntogglep').click(function(){
+                $('#p1').slideToggle();
+            })
+        });
+
+        // Fade out, Fade in, Fade toggle
+         $(document).ready(function(){
+            $('#btnfout').click(function(){
+                $('#img2').fadeOut(1000);
+            })
+            
+            $('#btnfin').click(function(){
+                $('#img2').fadeIn(1000);
+            })
+
+            $('#btntogglef').click(function(){
+                $('#img2').fadeToggle(1000);
+            })
+        });
+    </script>
+</body>
+</html>
