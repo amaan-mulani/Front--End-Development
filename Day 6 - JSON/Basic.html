@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+</head>
+<body>
+    <p id="p1"></p>
+    
+    <script>
+        let text ='{"employees":[{"name":"Amaan", "age" : 24, "city":"Mumbai"}]}';
+
+        const obj = JSON.parse(text);
+            console.log(obj); // check in console
+            console.log(obj.employees); // should be an array
+            console.log(obj.employees[0]); // should be object {name:..., age:..., city:...}
+
+        document.getElementById("p1").innerHTML = obj.employees[0].name + " , " + obj.employees[0].age + " , " + obj.employees[0].city;
+    </script>
+</body>
+</html>
