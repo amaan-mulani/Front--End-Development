@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h3>Header 3</h3>
+    <p>Practicing basic HTML</p>
+    <h3>Lists</h3>
+    <h4>Creating an ordered list.</h4>
+    <ol>
+        <li>Colouring the text.</li>
+        <li>Inserting the images and setting Height & Width</li>
+        <li>Scrolling 3 different images.</li>
+    </ol>
+    <h4>Creating an unordered list</h4>
+    <ul>
+        <li>Creating Table</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <h4>Colouring the text</h4>
+    <h5 style="background-color:brown; color:beige;">Beige with Brown background</h5>
+    <h5 style="background-color:beige; color:brown;">Brown with Beige background</h5>
+    <h5 style="background-color:rgb(168, 168, 104); color:green;">Green with Cream background</h5>
+    
+    <h4>Inserting Images</h4>
+    <img src="img1.jpg" alt="First" width="400" height="200"> 
+    <img src="img2.jpg" alt="Second" width="400" height="200">
+
+    <h4>Scrolling Images using marquee tag</h4>
+    <marquee behavior="slide" direction="left" scrollamount="20">
+    <img src="scroll1.jpg" alt="First" width="250" height="350"> 
+    <img src="scroll2.jpg" alt="Second" width="250" height="350">
+    <img src="scroll3.jpg" alt="Third" width="250" height="350">
+    </marquee>
+
+    <a href="https://www.google.com/"><h4>Google !</h4></a>
+
+    <h4>Creating a table</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        <tr aria-rowspan="40">
+            <td>Amaan</td>
+            <td>24</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Abhi</td>
+            <td>23</td>
+            <td>A</td>
+        </tr>
+    </table>
+    <h4>Table with column and row spans</h4>
+    <h5>Task 1</h5>
+    <table border="1">
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="2">B</td>
+            <td rowspan="2">C</td>
+        </tr>
+                <tr>
+            <td colspan="2">D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td rowspan="2">F</td>
+            <td colspan="2">G</td>
+        </tr>
+        <tr>
+            <td colspan="2">H</td>
+        </tr>
+    </table>
+
+    <h5>Task 2</h5>
+        <table border="1">
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td colspan="2">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td colspan="1">F</td>
+        </tr>
+        <tr>
+            <td colspan="2">G</td>
+            <td>H</td>
+        </tr>
+    </table>
+    <h4>Task 3</h4>
+    <table border="1">
+        <tr>
+            <th style="background-color: rgb(195, 121, 121);"colspan="8">Indian Railway Timetable</th>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center; background-color:green">Up Side</td>
+            <td colspan="4" style="text-align: center; background-color: blue">Down Side</td>
+        </tr>
+        <tr>
+            <td>Train No.</td>
+            <td>Train Name</td>
+            <td>Arrival Time</td>
+            <td>Departure Time</td>
+            <td>Train No.</td>
+            <td>Train Name</td>
+            <td>Arrival Time</td>
+            <td>Departure Time</td>
+        </tr>
+        <tr>
+            <td>12345</td>
+            <td>Rajdhani</td>
+            <td>10:00 AM</td>
+            <td>10:15 AM</td>
+            <td>54321</td>
+            <td>Shatabdi</td>
+            <td>05:00 PM</td>
+            <td>05:15 PM</td>
+        </tr>
+        <tr>
+            <td>67890</td>
+            <td>Garib Rath</td>
+            <td>11:00 AM</td>
+            <td>11:15 AM</td>
+            <td>09876</td>
+            <td>Duronto</td>
+            <td>06:00 PM</td>
+            <td>06:15 PM</td>   
+        </tr>     
+    </table>
+    <h4>iFrame</h4>
+    <p><a href="https://www.google.com/" target="iframe_a"> Google</a></p>
+</body>
+</html>
