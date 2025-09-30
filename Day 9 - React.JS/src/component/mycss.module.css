@@ -1,0 +1,12 @@
+.box{
+    border: 3px solid brown;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: burlywood;
+    transition: 3000ms;
+}
+.box:hover{
+    transform:  rotateY(320deg);
+}
